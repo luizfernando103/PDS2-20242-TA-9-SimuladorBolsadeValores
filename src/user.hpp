@@ -4,8 +4,11 @@
 #include <string>
 #include <map>
 #include "stock.hpp"
+#include "market.hpp"
 
 using namespace std;
+
+class Mercado;
 
 class Usuario {
 private:
@@ -16,6 +19,8 @@ public:
     Usuario();
     
     Usuario(const string& nome, float saldo);
+
+    void depositar(float valor);
 
     void comprarAcao(Acao& acao, unsigned int quantidade);
 
