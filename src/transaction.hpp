@@ -6,27 +6,30 @@
 #include "stock.hpp"
 
 enum class TipoTransacao {
-    BUY,
-    SELL
+    COMPRA,
+    VENDA
 };
 
 class Transacao {
 private:
+    string usuario;
     Acao acao;
     int quantidade;
     float preco;
     TipoTransacao tipo;
-    std::time_t momento;
+    time_t momento;
 
 public:
-    Transacao(const Acao& stock, int quant, float valor, TipoTransacao t);
+    Transacao(string user, Acao stock, int quant, float valor, TipoTransacao t);
+    Transacao(string tempo, string usuario, string tipo, Acao stock, int quant);
 
     Acao getAcao() const;
     int getQuantidade() const;
     float getPreco() const;
     TipoTransacao getTipo() const;
-    std::time_t getMomento() const;
-    std::string toString() const;
+    time_t getMomento() const;
+    string toString() const;
 };
+
 
 #endif
