@@ -1,18 +1,26 @@
 #include <iostream>
 
 #include "market.hpp"
+#include "simulation.hpp"
 
 using namespace std;
 
+// DEFINE O NÚMERO DE OSCILAÇÕES QUE CADA AÇÃO VAI TER QUANDO A BOLSA FECHAR (A OPÇÃO SAIR FOR SELECIONADA).
+#define NUM_ATUALIZACOES 1
+
 int main() {
     Mercado mkt = Mercado();
-    mkt.addAcao("Petrobras", "PETR4", 547.0f, 100000);
-    mkt.addAcao("Vale", "VALE3 ", 289.0f, 200000);
+    lerDados(mkt);
+    
+    Interface(mkt);
 
-    Acao& acao = mkt.getAcao("PETR4");
-    cout << acao.getEmpresa() << "(" << acao.getCodigo() << "): " << acao.getPreco() << endl;
-    mkt.atualizarMercado();
-    cout << acao.getEmpresa() << "(" << acao.getCodigo() << "): " << acao.getPreco() << endl;
+    for(int i=0; i<NUM_ATUALIZACOES; i++){
+        mkt.atualizarMercado();
+    }
+
+    if(salvarDados(mkt)){
+        cout << "Dados salvos com sucesso!" << endl;
+    }
 
     return 0;
 }
