@@ -1,0 +1,67 @@
+\chapter{Simulador de Bolsa de Valores}
+\hypertarget{md__r_e_a_d_m_e}{}\label{md__r_e_a_d_m_e}\index{Simulador de Bolsa de Valores@{Simulador de Bolsa de Valores}}
+\label{md__r_e_a_d_m_e_autotoc_md0}%
+\Hypertarget{md__r_e_a_d_m_e_autotoc_md0}%
+
+
+{\ttfamily PROGRAMAÇÃO E DESENVOLVIMENTO DE SOFTWARE II}
+
+Este projeto se baseia na criação de um simulador de bolsa de valores, uma plataforma virtual que possibilita aos usuários praticarem investimentos financeiros sem arriscar dinheiro real. Ele replica as condições reais do mercado financeiro, oferencendo ferramentas e recursos semelhantes aos que são encontrados em plataformas de negociações reais. Os usuários poderão comprar e vender ações com dinheiro fictício enquanto acompanham o desempenho de seus investimentos. Esse simulador é útil para investidores iniciantes aprenderem sobre o mercado financeiro, experimentarem diferentes estratégias de investimento e ganharem confiança antes de investirem com dinheiro real.\hypertarget{md__r_e_a_d_m_e_autotoc_md1}{}\doxysection{\texorpdfstring{Integrantes}{Integrantes}}\label{md__r_e_a_d_m_e_autotoc_md1}
+
+\begin{DoxyItemize}
+\item Alexandre Rodrigues da Silva
+\item Eduarda Souza Nunes
+\item Gabriel Garcia Lamego Rodrigues
+\item Luiz Fernando de Almeida Dias
+\end{DoxyItemize}\hypertarget{md__r_e_a_d_m_e_autotoc_md2}{}\doxysection{\texorpdfstring{Orientador}{Orientador}}\label{md__r_e_a_d_m_e_autotoc_md2}
+
+\begin{DoxyItemize}
+\item Wagner Cipriano
+\end{DoxyItemize}\hypertarget{md__r_e_a_d_m_e_autotoc_md3}{}\doxysection{\texorpdfstring{Estrutura do Projeto}{Estrutura do Projeto}}\label{md__r_e_a_d_m_e_autotoc_md3}
+Este projeto não possui outros diretórios além do principal. Todos os arquivos do projeto se encontram em um diretório.\hypertarget{md__r_e_a_d_m_e_autotoc_md4}{}\doxysection{\texorpdfstring{Instruções de Instalação}{Instruções de Instalação}}\label{md__r_e_a_d_m_e_autotoc_md4}
+{\bfseries{Requisitos}}\+: ~\newline
+
+\begin{DoxyItemize}
+\item No mínimo, 1.\+23 MB de espaço disponível
+\item (Opcional) Ter a linha de comando “make” instalada no computador
+\end{DoxyItemize}
+
+Baixe os arquivos do projeto neste repositório e coloque-\/os em um local de seu pc de sua preferência. Caso faça modificações no código do programa, ele pode ser compilado utilizando o arquivo “makefile”. Abra a interface de linha de comando de sua preferência (prompt de comando, powershell, etc) operando no diretório em que estão os arquivos do projeto e digite o comando “make”.\hypertarget{md__r_e_a_d_m_e_autotoc_md5}{}\doxysection{\texorpdfstring{Instruções de Uso}{Instruções de Uso}}\label{md__r_e_a_d_m_e_autotoc_md5}
+\hypertarget{md__r_e_a_d_m_e_autotoc_md6}{}\doxysubsection{\texorpdfstring{Instruções Gerais}{Instruções Gerais}}\label{md__r_e_a_d_m_e_autotoc_md6}
+Abra o arquivo “stock\+\_\+simulation.\+exe” e rode o programa. O programa abrirá em seu menu principal, o qual apresentará diversas opções para o usuário do software escolher como prosseguir\+:\hypertarget{md__r_e_a_d_m_e_autotoc_md7}{}\doxysubsubsection{\texorpdfstring{Quadro de ações}{Quadro de ações}}\label{md__r_e_a_d_m_e_autotoc_md7}
+Ao digitar “q” no menu principal, você será redirecionado para uma lista com o código, a empresa associada e o valor de cada ação disponível no mercado virtual do programa.\hypertarget{md__r_e_a_d_m_e_autotoc_md8}{}\doxysubsubsection{\texorpdfstring{Histórico de preço de uma ação}{Histórico de preço de uma ação}}\label{md__r_e_a_d_m_e_autotoc_md8}
+Ao digitar “p” no menu principal, você poderá ver o histórico dos últimos 10 ou menos valores registrados de uma ação a qual foi selecionada.\hypertarget{md__r_e_a_d_m_e_autotoc_md9}{}\doxysubsubsection{\texorpdfstring{Consultar disponibilidade de compra}{Consultar disponibilidade de compra}}\label{md__r_e_a_d_m_e_autotoc_md9}
+Ao digitar “a” no menu principal, você poderá ver a quantidade disponível no mercado virtual de uma ação selecionada.\hypertarget{md__r_e_a_d_m_e_autotoc_md10}{}\doxysubsubsection{\texorpdfstring{Visualizar carteira de usuário}{Visualizar carteira de usuário}}\label{md__r_e_a_d_m_e_autotoc_md10}
+Ao digitar “u” no menu principal, você poderá visualizar a carteira (saldo e ações que possui) de um usuário registrado no sistema do programa.\hypertarget{md__r_e_a_d_m_e_autotoc_md11}{}\doxysubsubsection{\texorpdfstring{Comprar ação}{Comprar ação}}\label{md__r_e_a_d_m_e_autotoc_md11}
+Ao digitar “b” no menu principal, você poderá comprar uma ação disponível no mercado virtual do programa para a carteira de um usuário selecionado.\hypertarget{md__r_e_a_d_m_e_autotoc_md12}{}\doxysubsubsection{\texorpdfstring{Vender ação}{Vender ação}}\label{md__r_e_a_d_m_e_autotoc_md12}
+Ao digitar “s” no menu principal, você poderá vender uma ação disponível na carteira do usuário que você selecionar.\hypertarget{md__r_e_a_d_m_e_autotoc_md13}{}\doxysubsubsection{\texorpdfstring{Menu do administrador}{Menu do administrador}}\label{md__r_e_a_d_m_e_autotoc_md13}
+Ao digitar “d” no menu principal, você será redirecionado para o menu do administrador, nele haverá diversas opções para o usuário do programa ter a capacidade de alterar os dados do programa livremente\+:
+
+
+\begin{DoxyItemize}
+\item {\bfseries{Adicionar novo ativo de ação}}\+: Digitando “a”, pode-\/se adicionar um novo ativo de ação ao mercado virtual, informando seu código, empresa associada, valor e quantidade disponível
+\item {\bfseries{Remover ativo de ação}}\+: Digitando “r”, pode-\/se remover um ativo de ação o qual for selecionado do mercado virtual
+\item {\bfseries{Cadastrar novo usuário}}\+: Digitando “c”, pode-\/se cadastrar um novo usuário ao sistema do programa, informando seu nome e seu primeiro depósito em sua carteira
+\item {\bfseries{Remover conta de usuário}}\+: Digitando “e”, pode-\/se remover um usuário cadastrado o qual foi selecionado do sistema
+\end{DoxyItemize}\hypertarget{md__r_e_a_d_m_e_autotoc_md14}{}\doxysubsection{\texorpdfstring{Utilizando dados.\+txt}{Utilizando dados.\+txt}}\label{md__r_e_a_d_m_e_autotoc_md14}
+Caso o usuário queira alterar os dados iniciais do programa, ele pode utilizar o arquivo “dados.\+txt” localizado no próprio diretório do programa. Esse arquivo contém todos os dados os quais o software terá ao inicializar. O arquivo é dividido em três partes. A primeira está relacionada aos ativos do mercado virtual e pode-\/se alterá la baseando-\/se na seguinte estrutura a qual ela segue\+:
+
+\+\_\+\+Número de ativos diferentes ~\newline
+ Empresa relacionada\texorpdfstring{$\vert$}{|}\+Código\texorpdfstring{$\vert$}{|}\+Valor\texorpdfstring{$\vert$}{|}\+Número total de ações disponíveis\texorpdfstring{$\vert$}{|}\+Histórico do ativo ~\newline
+ …\+\_\+
+
+A segunda parte diz sobre os usuários cadastrados no sistema e suas respectivas carteiras. Ela segue a seguinte estrutura\+:
+
+\+\_\+\+Número de usuários ~\newline
+ Nome\texorpdfstring{$\vert$}{|}\+Saldo na carteira\texorpdfstring{$\vert$}{|}\+Quantidade de ativos diferentes ~\newline
+ Código do ativo na carteira\texorpdfstring{$\vert$}{|}\+Quantidade do ativo ~\newline
+ …\+\_\+
+
+A terceira parte contém as transações que ocorreram antes da inicialização do programa e possui a seguinte estrutura\+:
+
+\+\_\+\+Número de transações ~\newline
+ Data e hora da transação\texorpdfstring{$\vert$}{|}\+Usuário\texorpdfstring{$\vert$}{|}\+Tipo de transação\texorpdfstring{$\vert$}{|}\+Código\texorpdfstring{$\vert$}{|}\+Quantidade do ativo\texorpdfstring{$\vert$}{|}\+Valor da transação ~\newline
+ …\+\_\+
+
+Cada seção do arquivo é dividida por uma linha vazia, assim como cada usuário da segunda parte.\hypertarget{md__r_e_a_d_m_e_autotoc_md15}{}\doxysection{\texorpdfstring{Principais Dificuldades}{Principais Dificuldades}}\label{md__r_e_a_d_m_e_autotoc_md15}
+A principal dificuldade encontrada no projeto foi relacionada ao arquivo “main.\+cpp”, que estava ficando muito grande e confuso. Como resolução, tivemos que criar os arquivos “simulation.\+hpp” e “simulation.\+cpp” para manter uma programação mais organizada e menos confusa, além de fazer pequenas alterações nos outros arquivos que já estavam prontos. 
