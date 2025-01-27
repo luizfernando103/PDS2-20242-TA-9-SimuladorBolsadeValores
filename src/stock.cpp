@@ -1,4 +1,4 @@
-#include "stock.hpp"
+#include "../include/stock.hpp"
 
 Acao::Acao(){}
 

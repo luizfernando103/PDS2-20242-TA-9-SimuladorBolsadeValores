@@ -1,7 +1,7 @@
 #include <iostream>
 
-#include "market.hpp"
-#include "simulation.hpp"
+#include "../include/market.hpp"
+#include "../include/simulation.hpp"
 
 using namespace std;
 

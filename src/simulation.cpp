@@ -3,7 +3,7 @@
 #include <string>
 #include <cctype>
 
-#include "simulation.hpp"
+#include "../include/simulation.hpp"
 
 void Interface(Mercado& mkt){
     system("clear");
