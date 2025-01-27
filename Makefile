@@ -6,8 +6,8 @@ CXX = g++
 CXXFLAGS = -Wall -Wextra -std=c++17
 
 # Arquivos de cabeçalho e código fonte
-HEADERS = stock.hpp user.hpp market.hpp transaction.hpp simulation.hpp
-SOURCES = main.cpp stock.cpp user.cpp market.cpp transaction.cpp simulation.cpp
+HEADERS = src/stock.hpp src/user.hpp src/market.hpp src/transaction.hpp src/simulation.hpp
+SOURCES = src/main.cpp src/stock.cpp src/user.cpp src/market.cpp src/transaction.cpp src/simulation.cpp
 OBJECTS = $(SOURCES:.cpp=.o)
 
 # Regra padrão
